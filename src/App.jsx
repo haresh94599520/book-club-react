@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await fetch("http://book-club-json.herokuapp.com/books");
+        const res = await fetch("https://book-club-json.herokuapp.com/books");
         const json = await res.json();
         setBooks(json);
       } catch (err) {
